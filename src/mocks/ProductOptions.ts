@@ -1,5 +1,4 @@
-import type { ProductOptionsConfig } from '../interfaces';
-import type { Product } from '../stores/cartStore';
+import type { Product, ProductOptionsConfig } from '../interfaces';
 
 // Define which products have which options
 export const productOptionsConfig: ProductOptionsConfig = {

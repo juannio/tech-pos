@@ -15,6 +15,8 @@ export default function InventoryManagement() {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
   const [showAddModal, setShowAddModal] = useState(false);
 
+  console.log(showAddModal);
+
   // Sample inventory data
   const inventory = [
     {
@@ -164,7 +166,7 @@ export default function InventoryManagement() {
             className={`hidden sm:block h-5 w-px ${darkMode ? 'bg-gray-600' : 'bg-gray-300'}`}
           ></div>
           <div className="flex items-center gap-4 sm:gap-6 md:gap-8 overflow-x-auto w-full sm:w-auto">
-            {categories.map((category, index) => (
+            {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}

@@ -8,9 +8,9 @@ import {
 import ProductPage from '../pages/ProductsPage';
 import { useTheme } from '../context/useTheme';
 import { SideBar } from '../components/SideBar';
-import { SalesPage } from '../pages/SalesPage';
+/* import { SalesPage } from '../pages/SalesPage';
 import { EmployeesAttendance } from '../pages/EmployesPage';
-import InventoryManagement from '../pages/InventoryPage';
+import InventoryManagement from '../pages/InventoryPage'; */
 
 export default function MainLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -116,8 +116,8 @@ export default function MainLayout() {
           /*             className={`h-full border-2 border-dashed ${theme.border} rounded-lg`}
            */
           >
-            {/* <ProductPage /> */}
-            <SalesPage />
+            <ProductPage />
+            {/* <SalesPage /> */}
             {/* <EmployeesAttendance /> */}
             {/* <InventoryManagement /> */}
           </div>

@@ -15,9 +15,9 @@ import {
   ChevronUpDownIcon,
 } from '@heroicons/react/24/outline';
 import { useTheme } from '../../../context/useTheme';
-import { useCartStore, type Product } from '../../../stores/cartStore';
+import { useCartStore } from '../../../stores/cartStore';
 import { getProductOptions } from '../../../utils';
-import type { ProductOption } from '../../../interfaces';
+import type { Product, ProductOption } from '../../../interfaces';
 
 interface ProductOptionsModalProps {
   product: Product | null;
